@@ -19,6 +19,8 @@ public class Section {
     private int academicYear;
     private String teacherName;
 
+    // section model
+
 
     public Section() {
     }
