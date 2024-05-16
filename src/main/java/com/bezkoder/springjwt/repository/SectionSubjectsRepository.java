@@ -26,8 +26,8 @@ public interface SectionSubjectsRepository extends JpaRepository<SectionSubjects
     List<SectionSubjects> findBySectionName(String sectionName);
 
 //    @Query("SELECT a.teacherName, a.academicYear, b.subjectName FROM Section a,SectionSubjects b WHERE a.id = b.section")
-//    @Query("SELECT a.teacherName, a.academicYear, b.subjectName FROM Section a JOIN SectionSubjects b ON a.id = b.section")
-//    List<TeacherSubject> getTeacherAndSubjectNames();
+@Query("SELECT a.teacherName, a.academicYear, b.subjectName FROM Section a JOIN SectionSubjects b ON a.id = b.section.id")
+List<SectionSubjects> getTeacherAndSubjectNames();
 
 
 }

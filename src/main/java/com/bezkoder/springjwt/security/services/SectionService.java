@@ -51,8 +51,8 @@ public class SectionService {
     }
 
 
-//        public List<TeacherSubject> getTeacherAndSubjectNames(){
-//        return sectionSubjectsRepository.getTeacherAndSubjectNames();
-//    }
+        public List<SectionSubjects> getTeacherAndSubjectNames(){
+        return sectionSubjectsRepository.getTeacherAndSubjectNames();
+    }
 
 }

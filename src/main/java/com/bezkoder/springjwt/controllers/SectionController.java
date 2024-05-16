@@ -84,10 +84,10 @@ public class SectionController {
         }
     }
 
-//        @GetMapping("/all")
-//    public List<TeacherSubject> getTeacherAndSubjectName(){
-//    return sectionService.getTeacherAndSubjectNames();
-//    }
+        @GetMapping("/all")
+    public List<SectionSubjects> getTeacherAndSubjectName(){
+    return sectionService.getTeacherAndSubjectNames();
+    }
 
 
 
