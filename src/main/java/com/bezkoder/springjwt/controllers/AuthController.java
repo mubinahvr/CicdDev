@@ -125,7 +125,7 @@ public class AuthController {
   }
 
   @GetMapping("/users")
-  @PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
+  //@PreAuthorize("hasRole('USER') or hasRole('MODERATOR') or hasRole('ADMIN')")
   public List<User> getUser() {
     return this.userRepository.findAll();
   }
